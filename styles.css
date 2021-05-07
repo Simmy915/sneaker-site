@@ -1,0 +1,516 @@
+/* External fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #464646;
+}
+/* Page Container Styles */
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+/* Navigation Tooltip Styling */
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+}
+
+/* Modal Styling */
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+/* Used to prevent the carousel from stretching the screen */
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+.icons {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 1111;
+}
+.red {
+  height: 45px;
+  width: 45px;
+  padding: 14px 10px 15px 15px;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+.red:hover {
+  color: white;
+  background-color: #ed2d34;
+}
+#homePage {
+  background-image: url(/images/background-images/banner.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+}
+.home-details {
+  width: 30%;
+}
+h1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.red-text {
+  color: #ed2d34;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.btn {
+  border: solid 2px #464646;
+  border-radius: 40px;
+  padding: 12px 50px;
+  text-decoration: none;
+  color: #464646;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  transition: 0.3s ease-in;
+}
+.btn:hover {
+  background-color: #ed2d34;
+  color: white;
+  border: solid 2px #ed2d34;
+}
+#productPage {
+  background-image: url(/images/background-images/products_bg.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.page-header-container {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+}
+.product-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 60px 30px 60px;
+  margin-bottom: 20px;
+}
+.counter {
+  margin-top: 25px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.counter div {
+  margin-right: 60px;
+}
+.counter-number {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.counter-text {
+  font-size: 16px;
+}
+.prod-btn {
+  border: solid 2px #464646;
+  background-color: white;
+  border-radius: 40px;
+  padding: 10px 40px;
+  text-decoration: none;
+  color: #464646;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+}
+.prod-btn:hover {
+  background-color: #ed2d34;
+  color: white;
+  border: solid 2px #ed2d34;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-img {
+  max-width: 250px;
+}
+.product h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  margin: 20px 0;
+}
+#product-slider {
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.testimonial-img {
+  max-width: 70px;
+  border-radius: 50%;
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.owl-stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.owl-item {
+  max-width: 100%;
+  font-size: 18px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote {
+  color: #c6c6c6;
+}
+#testimonialPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url(/images/background-images/reviews_bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#testimonialPage header {
+  text-align: center;
+}
+#testimonialPage h6,
+#testimonialPage h2 {
+  margin-bottom: 10px;
+}
+
+#testimonialPage h6 {
+  font-size: 18px;
+}
+.testimonial i,
+.testimonial q,
+.testimonial img,
+.testimonial p {
+  margin-top: 30px;
+}
+#contactPage {
+  background-image: url(/images/background-images/contact_bg.jpg);
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+div.under-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-left: 0px;
+}
+.contact-input {
+  max-width: 100%;
+  width: 500px;
+  height: 50px;
+  border: none;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding-top: 10px 12px 0px 0;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+#message {
+  height: 150px;
+  padding-top: 30px;
+  margin-bottom: 50px;
+}
+.contact-heading {
+  margin-bottom: 30px;
+}
+.contact-details-heading {
+  font-size: 30px;
+}
+.contact-details-container {
+  display: flex;
+  flex-direction: column;
+}
+.description {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+.contact-icon {
+  margin-right: 20px;
+  font-size: 2rem;
+}
+.details {
+  font-size: 16px;
+}
+.unite {
+  margin-left: 50px;
+}
+.num {
+  margin-left: 30px;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 50px;
+  color: #ed2d34;
+  background-color: white;
+  border: solid 2px #ed2d34;
+  border-radius: 50px;
+  width: 100%;
+  transition: 0.3s ease-in;
+}
+.button:hover {
+  color: white;
+  background-color: #ed2d34;
+}
+.touch-icons {
+  margin-top: 20px;
+}
+div.modal-body {
+}
+#modal.modal-active {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 5% 50px;
+  background: white;
+  margin-top: 25px;
+  margin-left: -2%;
+  opacity: 1;
+}
+.modal-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+.big-modal-image {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.small-modal-images {
+  display: flex;
+}
+.small-modal-image {
+  margin-top: 20px;
+  width: 150px;
+}
+#modal button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+}
+#modal h5 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 0;
+}
+#modal h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+#modal p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+.product-specs {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.sizes {
+  display: flex;
+  flex-direction: row;
+}
+#act-size {
+  margin-right: 50px;
+}
+.size {
+  margin-right: 30px;
+}
+.quantity {
+  display: flex;
+}
+.Qty-color {
+  display: flex;
+}
+.qty {
+  margin-right: 60px;
+}
+.color-text {
+  margin-left: 130px;
+  display: flex;
+}
+#number {
+  margin: 0 20px;
+}
+
+.color-1,
+.color-2,
+.color-3 {
+  padding: 0.5px 13px;
+  margin-right: 5px;
+}
+.color-1 {
+  background-color: white;
+  border: solid 1px black;
+}
+.color-2 {
+  background-color: #90cdf0;
+}
+.color-3 {
+  background-color: #f58357;
+}
+.colors {
+  margin-left: 55px;
+}
+.price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 45px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+a.buy {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  border: solid 2px #464646;
+  color: #464646;
+  padding: 15px 45px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s ease-in;
+}
+a.buy:hover {
+  border: solid 2px #ed2d34;
+  background-color: #ed2d34;
+  color: white;
+}
+.arrows {
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  margin-right: 10px;
+}
+.arrows span {
+  width: 10px;
+  height: 10px;
+  margin-right: 20px;
+  border: solid 1px #464646;
+  padding: 10px 13px;
+  border-radius: 50%;
+  transition: 0.3s ease-in;
+}
+.arrows span:hover {
+  background-color: #ed2d34;
+  border: solid 1px #ed2d34;
+  color: white;
+}
+.close {
+  padding: 20px;
+  outline: none;
+  transition: 0.3s ease-in;
+}
+.close:hover {
+  color: #ed2d34;
+  cursor: pointer;
+}
